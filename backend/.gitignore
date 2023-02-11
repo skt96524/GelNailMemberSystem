@@ -1,0 +1,14 @@
+node_modules
+dist
+pgdata
+package-lock.json
+yarn.lock
+.DS_Store
+
+.env
+.dockerignore
+docker.env
+upload
+uploads
+uploads-sample
+public/upload

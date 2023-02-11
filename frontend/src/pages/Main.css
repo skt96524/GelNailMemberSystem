@@ -1,0 +1,49 @@
+.scroll {
+  display: flex;
+  /* width: 100%; */
+  height: max-content;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0.5rem;
+}
+
+.scroll::-webkit-scrollbar {
+  --scroll-bar: 0;
+  height: var(--scroll-bar);
+  width: var(--scroll-bar);
+  display: none;
+}
+.scroll::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 1em;
+}
+.scroll::-webkit-scrollbar-button {
+  background-color: #87cefa;
+}
+
+.mainTitle {
+  color: #6ca29c;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+ion-thumbnail {
+  margin: 0 0.2rem;
+  --size: 5rem;
+
+  --border-radius: 0.5rem;
+}
+
+.scrollProduct {
+  min-width: 5rem;
+  min-height: 5rem;
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.margin-top-bottom {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

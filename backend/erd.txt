@@ -1,0 +1,172 @@
+# Visualize on https://erd.surge.sh
+# or https://quick-erd.surge.sh
+#
+# Relationship Types
+#  -    - one to one
+#  -<   - one to many
+#  >-   - many to one
+#  >-<  - many to many
+#  -0   - one to zero or one
+#  0-   - zero or one to one
+#  0-0  - zero or one to zero or one
+#  -0<  - one to zero or many
+#  >0-  - zero or many to one
+#
+////////////////////////////////////
+
+
+users
+-----
+id integer PK
+username varchar(60) unique
+hash_password varchar(60)
+nick_name varchar(50)
+phone_number integer NULL
+email varchar(64)
+identity enum('admin','shop_owner','member')
+users_status enum('active','inactive')
+image varchar(1000) NULL
+
+
+article
+-------
+id integer PK
+users_id integer FK >- users.id
+title varchar(255)
+main_img varchar(1000)
+html_content text
+views integer NULL
+article_status enum('active','inactive')
+
+
+shop
+----
+id integer PK
+owner integer FK >- users.id
+name varchar(255)
+area varchar(20)
+address varchar(255)
+open_time time
+close_time time
+intro text
+image varchar(1000)
+shop_status enum('applying','active','inactive')
+shop_tel integer
+
+
+message
+-------
+id integer PK
+sender integer NULL FK >- users.id
+receiver integer NULL FK >- users.id
+sender_shop integer NULL FK >- shop.id
+receiver_shop integer NULL FK >- shop.id
+content text
+
+
+shop_products_photo
+-------------------
+id integer PK
+images varchar(1000)
+intro text NULL
+shop_id integer FK >- shop.id
+
+
+like
+----
+id integer PK
+users_id integer NULL FK >- users.id
+shop_id integer NULL FK >- shop.id
+article_id integer NULL FK >- article.id
+products_id integer NULL FK >- shop_products_photo.id
+
+
+collection
+----------
+id integer PK
+collection_owner_id integer FK >- users.id
+shop_id integer NULL FK >- shop.id
+article_id integer NULL FK >- article.id
+follow_id integer NULL FK >- users.id
+products_id integer NULL FK >- shop_products_photo.id
+
+
+shop_intro_photos
+-----------------
+id integer PK
+images varchar(1000)
+shop_id integer FK >- shop.id
+
+
+shop_plan
+---------
+id integer PK
+plan_name varchar(255)
+intro text
+image varchar(1000)
+shop_id integer FK >- shop.id
+cancel_period integer NULL
+price integer
+types enum('limit','package')
+buy_period timestamp
+due_period bigint NULL
+package_qty integer NULL
+plan_status enum('active','inactive')
+
+
+shop_members
+------------
+id integer PK
+users_id integer FK >- users.id
+shop_id integer FK >- shop.id
+
+
+booking
+-------
+id integer PK
+shop_plan_id integer FK >- shop_plan.id
+users_id integer FK >- users.id
+package_id null fk >- users_package.id
+schedule timestamp
+booking_status enum('apply','confirm','reject','cancel','finish')
+apply_time timestamp
+confirm_time timestamp null
+reject_time timestamp null
+cancel_time timestamp null
+finish_time timestamp null
+
+notification
+------------
+id integer PK
+users_id integer FK >- users.id
+link varchar(255)
+content text
+
+
+users_package
+-------------
+id integer PK
+users_id integer FK >- users.id
+shop_plan_id integer FK >- shop_plan.id
+//original_qty integer
+//buy_price integer
+buy_time timestamp
+due_time timestamp
+
+
+
+# shop_members (130, 887)
+# booking (493, 230)
+# view: (656, 371)
+# users (469, 1011)
+# article (1196, 834)
+# shop (-862, 555)
+# message (-257, 1075)
+# shop_products_photo (-232, 735)
+# like (129, 603)
+# collection (622, 640)
+# shop_intro_photos (-623, 341)
+# shop_plan (-106, 62)
+# zoom: 1.548
+# notification (1231, 1185)
+# users_package (1084, 537)

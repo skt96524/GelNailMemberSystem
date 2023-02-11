@@ -1,0 +1,162 @@
+ion-content.login {
+  --ion-background-color: #a9d2cd;
+  scrollbar-width: none;
+}
+
+ion-content {
+  --overflow-scroll: false;
+}
+
+ion-input.custom {
+  --background: #f6f6f6;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  --color: rgb(63, 63, 63);
+  --padding-bottom: 0.5rem;
+  --padding-end: 0.5rem;
+  --padding-start: 0.5rem;
+  --padding-top: 0.5rem;
+}
+
+ion-input.regpage {
+  --background: #f6f6f6;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+  --color: rgb(63, 63, 63);
+  --padding-bottom: 0.5rem;
+  --padding-end: 0.5rem;
+  --padding-start: 0.5rem;
+  --padding-top: 0.5rem;
+}
+
+ion-button {
+  --background-hover: #b5e0db;
+  --background-activated: #b5e0db;
+}
+
+ion-button.white {
+  --background: #f6f6f6;
+  --color: #a9d2cd;
+}
+h1 {
+  color: #a9d2cd;
+  font-size: 3rem;
+}
+
+ion-back-button {
+  --color: #6ca29c;
+}
+ion-buttons {
+  --color: #6ca29c;
+}
+ion-tab-bar {
+  --color: #606060;
+  --color-activated: #b5e0db;
+}
+
+ion-tab-button {
+  --color: #606060;
+  --color-focused: #b5e0db;
+  --color-selected: #6ca29c;
+}
+
+ion-title {
+  --color: #6ca29c;
+}
+
+ion-toolbar {
+  --background: #ebf4f3;
+}
+
+ion-card-title {
+  --color: #6ca29c;
+}
+
+/* ion-card {
+  box-shadow: rgba(239, 239, 239, 0.5);
+} */
+
+/* ion-segment-button {
+  --indicator-color: #a9d2cd;
+  --color: #606060;
+  --color-focused: #b5e0db;
+  --color-checked: #6ca29c;
+} */
+
+ion-segment-button.ios {
+  /* background: #f6f6f6; */
+  --indicator-color: #a9d2cd;
+  --color-focused: #b5e0db;
+  --color-checked: #ffff;
+}
+
+ion-segment.ios {
+  background: #f6f6f6;
+}
+
+.toast_style_success {
+  --color: #6fc696;
+}
+
+ion-button.fill {
+  --color: #6ca29c;
+  --background: #f1f5f5;
+
+  --background-hover: #b5e0db;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+::-webkit-scrollbar {
+  opacity: 0;
+}
+.scroll-bar-indicator {
+  display: none;
+}
+
+.centerContainer {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.productModel {
+  height: 130%;
+  top: -15%;
+}
+
+.memberProfilePic {
+  margin: 1rem;
+}
+
+.loginLogo {
+  height: 65vh;
+}
+
+ion-button.loginPageBackBtn {
+  color: #ffffff;
+}
+
+.scroll-content {
+  overflow-y: auto !important;
+}
+
+.logo2 {
+  padding: 3rem;
+}
+
+.greensubmit {
+  background: #a9d2cd;
+  color: #f6f6f6;
+  border-radius: 0.5rem;
+  border: 0;
+  height: 4vh;
+  width: 20rem;
+  margin: 3rem;
+}
+
+.sub {
+  margin: auto;
+  align-content: center;
+}

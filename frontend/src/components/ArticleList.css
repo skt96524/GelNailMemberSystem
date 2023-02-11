@@ -1,0 +1,16 @@
+ion-card.no-margin {
+  margin: 0;
+}
+
+ion-card-header.no-padding {
+  /* margin: 0; */
+  padding: 0 0.5rem;
+}
+
+ion-card-title.article-title {
+  font-size: 0.8rem;
+  max-height: 1.8rem;
+  overflow: scroll;
+  /* padding: 0;
+  margin: 0; */
+}

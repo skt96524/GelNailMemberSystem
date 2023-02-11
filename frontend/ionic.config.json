@@ -1,0 +1,7 @@
+{
+  "name": "GelNail",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

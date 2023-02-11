@@ -1,0 +1,22 @@
+.col {
+  /* width: 100%; */
+  display: grid;
+  /* column-width: 20%; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.box {
+  position: relative;
+  width: 9.5rem;
+  height: 30vh;
+  padding: 0.5rem;
+  margin: 2rem;
+}
+
+.close-btn {
+  text-align: end;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  font-size: 20px;
+  color: #74c0c0;
+}

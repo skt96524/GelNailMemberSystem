@@ -1,0 +1,9 @@
+.vscode
+node_modules
+dist
+pgdata
+package-lock.json
+yarn.lock
+.DS_Store
+
+./backend/.env

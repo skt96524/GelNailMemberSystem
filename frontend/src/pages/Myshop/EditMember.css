@@ -1,0 +1,27 @@
+ion-card-header.ios {
+  display: flex;
+  flex-flow: column-reverse;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+ion-card-title {
+  font-size: 1rem;
+}
+ion-card-img {
+  size: 2rem;
+}
+
+.scroll {
+  height: max-content;
+  overflow-x: scroll;
+  margin: 0.5rem;
+}
+
+.scrollPlan {
+  margin: 0 0.2rem;
+  --border-radius: 0.5rem;
+  min-width: 8rem;
+  min-height: 6.1rem;
+  max-width: 8rem;
+  max-height: 6.1rem;
+}

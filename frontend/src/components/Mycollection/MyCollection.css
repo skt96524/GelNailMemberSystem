@@ -1,0 +1,20 @@
+.nailImg {
+  width: 7.3rem;
+  height: 7.3rem;
+  padding: 0.1rem;
+  border-radius: 8% !important;
+}
+
+.articleImg {
+  width: 7.3rem;
+  height: 7.3rem;
+  padding: 0.1rem;
+  border-radius: 8% !important;
+}
+
+.shopImg {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.1rem;
+  border-radius: 8% !important;
+}

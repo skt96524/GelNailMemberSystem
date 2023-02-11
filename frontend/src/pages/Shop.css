@@ -1,0 +1,26 @@
+.mainTitle {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.scrollShop {
+  margin: 0 0.2rem;
+  --border-radius: 0.5rem;
+  min-width: 8rem;
+  min-height: 6.1rem;
+  max-width: 8rem;
+  max-height: 6.1rem;
+}
+
+.scrollShopImage {
+  min-width: 8rem;
+  min-height: 4.5rem;
+  max-width: 8rem;
+  max-height: 4.5rem;
+}
+
+.margin-top-bottom {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
